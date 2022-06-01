@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Submariner",
+  "version": "1.0",
+
+  "description": "Gets rid of subscription requests from certain websites",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wired.com/*"],
+      "js": ["src/submariner.js"]
+    }
+  ]
+
+}
